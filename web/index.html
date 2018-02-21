@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testc</title>
+<style type="text/css">
+	body{
+		color: #4e89ba;
+		font-size: 9pt;
+		background-color: rgba(255,255,0,0.2);
+	}
+	header, section, footer{
+		border: 2px solid blue;
+		border-radius: 30px;
+	}
+	header {
+		border-radius: 0px 70px 0px 70px;
+		background-image: url("images/back_2.gif");
+	}
+	header h1 {
+		font-family: Jokerman;
+		font-size: 4em;
+		color: #6d00db;
+		text-shadow: 2px 2px 5px gray;
+	}
+	#s1 {
+		background: rgba(255,185,220,0.4); 
+	}
+	.c1 {
+		font-style: italic;
+		font-weight: bold;
+		letter-spacing: 5px;
+		text-decoration: overline;
+	}
+	footer {
+		text-align:center;
+		line-height: 2em;
+		text-transform: uppercase;
+	}
+	
+	#s3 {
+		background: url('images/back_1.gif');
+		width: 500px;
+		height: 250px;
+		background-repeat: repeat-y;
+	}
+	header nav ol { list-style: none; }
+	header nav ol li {
+		float: left;
+		width: 120px;
+		height: 40px;	
+		font-size: 14pt;	
+	}
+	header nav ol li a {
+		background: navy;
+		color: white;
+		display: block;
+		text-align: center;
+		padding: 3px;
+		margin: 1px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	header nav ol li a:hover {
+		background: orange;
+		color: navy;
+		text-shadow: 1px 1px 2px gray;
+		font-weight: bold;
+		display: block;
+	}
+</style>
+</head>
+<body style="margin:0px;">
+<header>
+	<h1>testCSSProject</h1>
+
+
+
+	<form method="post" action="">
+	<nav id="menubar">
+	<ol>
+		<li><a href="practice1/make1.html">만들기1</a></li>
+		<li><a href="practice2/make2.html">만들기2</a></li>
+		<li><a href="views/test/testCss3_1.html">만들기3</a></li>
+		<li><a href="views/test/testCss3_2.html">css3 연습2</a></li>
+		<li><a href="views/test/testCss3_3.html">css3 transform, transition 연습</a></li>
+		<li><a href="views/test/testCss3_selector.html">css3 selector 연습</a></li>
+	</ol>
+</nav>
+</header>
+</form><br><br>
+
+<section id="s1">
+	<h1>본문 영역 1</h1>
+</section>
+<section id="s2">
+	<h1 class="c1">본문 영역 2</h1>
+</section>
+<section id="s3"  class="c1">
+	<h1>본문 영역 3</h1>
+</section>
+<footer class="c1">
+	copyright@iei.or.kr developer : 홍길동<br>
+	서울시 강남구 역삼동 Tel : 02-1234-5678
+</footer>
+</body>
+</html>

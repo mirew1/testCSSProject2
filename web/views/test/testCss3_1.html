@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>testCss3_1.html</title>
+<link rel="stylesheet" type="text/css" href="../../css/sample3_1.css">
+<style type="text/css">
+	li { clear : both; }
+	div p { float : left; }
+	div#d1 > p#p1 { 
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		background-color: olive;
+		border: 1px solid green;
+		border-radius: 50px;
+		-webkit-border-radius: 50px; /* webkit은 크롬에서 안먹을때*/
+		-moz-border-radius: 50px; /* mozlia에서 안먹을때*/
+	}
+
+
+	div#d1 > p#p2 { 
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		background-color: pink;
+		border: 1px solid magenta;
+		border-top-left-radius: 50px;
+		-webkit-border-top-left-radius-: 50px; /* webkit은 크롬에서 안먹을때*/
+		-moz-border-radius-topleft: 50px; /* mozlia에서 안먹을때*/
+		border-bottom-right-radius: 50px;
+		-webkit-border-bottem-right-radius: 50px; /* webkit은 크롬에서 안먹을때*/
+		-moz-border-radius-bottomright: 50px; /* mozlia에서 안먹을때*/
+	}
+
+	div#d1 > p#p3 { 
+		width: 200px;
+		height: 200px;
+		margin: 20px;
+		background-color: cyan;
+		border: 1px solid blue;
+		border-radius: 200px 0 0 0;
+		-webkit-border-radius: 200px 0 0 0; /* webkit은 크롬에서 안먹을때*/
+		-moz-border-radius: 200px 0 0 0; /* mozlia에서 안먹을때*/
+	}
+</style>
+</head>
+<body>
+<h1>CSS3 스타일 속성 연습1</h1>
+<ol>
+	<li><h3>border-radius : 모서리 둥글게 효과</h3></li>
+	<div id="d1">
+		<p id="p1">4개의 모서리 동일하게 둥글게 적용</p>
+		<p id="p2">왼쪽 위와 오른쪽 아래만 모서리 둥글게 적용</p>
+		<p id="p3">왼쪽 아래만 모서리 둥글게 적용</p>
+	</div>
+	<li><h3>border-color : 테두리 선에 그라데이션 색상 적용</h3></li>
+	<div id="d2">
+		<p id="grad">
+			내 그늘 아래 그림자 길어질수록 <br>
+			나의 어지름증 깊어져<br>
+			세상이 몇 바퀴씩 곤두박질 치네요.
+		</p>
+	</div>
+	<li><h3>테두리 border에 이미지 적용하기</h3></li>
+	<div id="d3">
+		
+	</div>
+	<li><h3></h3></li>
+	<div id="d4"></div>
+	<li><h3></h3></li>
+	<div id="d5"></div>
+	<li><h3></h3></li>
+	<div id="d6"></div>
+</ol>
+</body>
+</html>
